@@ -1,0 +1,24 @@
+7.0
+-1.0
+1.0
+12.0
+0.75
+1.3333333333333333
+3.0
+1.0
+90.0
+23.0
+-17.0
+35.0
+-5.0
+77.0
+54.0
+78.75
+94.5
+5.0
+DivideByZeroException: 4.0 / 0.0
+DivideByZeroException: 4.0 % 0.0
+InvalidOperationException
+InvalidTokenException: A
+InvalidTokenException: &
+3.0
