@@ -9,9 +9,16 @@ package grupp4.calculator.view;
 import grupp4.calculator.exeptions.*;
 
 /**
- *
- * @author Lennart
+ *Interface for implementing views
+ * 
  */
 public interface ViewInterface {
-    public void RenameThisFunction(String[] args) throws InvalidTokenException, DivideByZeroException;
+    /**
+     * Abstract method 
+     * @param args Command line arguments
+     * @throws InvalidTokenException if invalid token in file.
+     * @throws DivideByZeroException 
+     */
+     
+    public void userView(String[] args) throws InvalidTokenException, DivideByZeroException;
 }

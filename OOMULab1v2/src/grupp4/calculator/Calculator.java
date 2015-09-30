@@ -10,10 +10,16 @@ import grupp4.calculator.controller.Controller;
 import grupp4.calculator.exeptions.*;
 
 /**
- *
- * @author Lennart
+ *Calculator is the main class
+ * implements the main method
  */
 public class Calculator {
+    /**
+     * Main method
+     * @param args Command line arguments
+     * @throws InvalidTokenException
+     * @throws DivideByZeroException 
+     */
     public static void main(String[] args) throws InvalidTokenException, DivideByZeroException {
         
         try{

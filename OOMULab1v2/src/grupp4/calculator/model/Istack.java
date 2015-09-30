@@ -9,12 +9,30 @@ import grupp4.calculator.model.tokens.Token;
 
 /**
  * interface for implementing stack
- * @author alexander
  */
 public interface Istack {  
-    
+   /**
+    * abstract method
+    * Pushes target token to the stack.
+    * @param token 
+    */
     public void push(Token token);
+    
+    /**
+     * abstract method
+     *Pops the top token of the stack and return the token
+     * @return 
+     */
     public Token pop();
+    
+    /**
+     * Peeks at the top token and returns the token without removing the token from the stack
+     * @return returns value of top token in stack as a token.
+     */
     public Token peek();
+    /**
+     *Cheeks if stack is empty. if empty returns true else false
+     * @return returns true if stack is empty else false.
+     */
     public Boolean isEmpty();
 }

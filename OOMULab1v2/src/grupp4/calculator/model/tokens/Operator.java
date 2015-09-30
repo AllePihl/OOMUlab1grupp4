@@ -9,8 +9,8 @@ import grupp4.calculator.exeptions.DivideByZeroException;
 import grupp4.calculator.model.Istack;
 
 /**
- *
- * @author Lennart
+ *An abstract class representing different operators
+ * 
  */
 public abstract class Operator extends Token{
 

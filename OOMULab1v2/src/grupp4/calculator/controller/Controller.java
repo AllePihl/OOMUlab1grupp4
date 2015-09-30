@@ -25,7 +25,7 @@ public class Controller {
         else{
             view = new FileView();
         }
-        view.RenameThisFunction(args);
+        view.userView(args);
         
     }
 }
