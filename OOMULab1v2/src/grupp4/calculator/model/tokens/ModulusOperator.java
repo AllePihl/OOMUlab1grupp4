@@ -10,19 +10,29 @@ import grupp4.calculator.model.Istack;
 
 /**
  *
- * @author Lennart
+ * 
  */
 public class ModulusOperator extends Operator{
 
     public ModulusOperator() {
     }
     
+    /**
+     * 
+     * @return the operator as a string
+     */
     @Override
      public String toString(){
         return ("%");
     }
     
 
+    /**
+     * 
+     * @param stack
+     * @return
+     * @throws DivideByZeroException is thrown when the denominator is zero
+     */
     @Override
     public double Calc(Istack stack) throws DivideByZeroException{
         double r, Right, Left;

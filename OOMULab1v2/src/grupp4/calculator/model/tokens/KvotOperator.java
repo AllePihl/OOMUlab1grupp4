@@ -10,13 +10,17 @@ import grupp4.calculator.model.Istack;
 
 /**
  *
- * @author Lennart
+ * 
  */
 public class KvotOperator extends Operator{
 
     public KvotOperator() {
     }
     
+    /**
+     * 
+     * @return the operator as a string
+     */
     @Override
      public String toString(){
         return ("/");
@@ -24,12 +28,12 @@ public class KvotOperator extends Operator{
     
      
      
-/**
- *
- * @param stack
- * @return
- * @throws DivideByZeroException 
- */
+    /**
+     *
+     * @param stack
+     * @return 
+     * @throws DivideByZeroException is thrown when the denominator is zero
+    */
     @Override
     public double Calc(Istack stack) throws DivideByZeroException{
         double r, Right, Left;

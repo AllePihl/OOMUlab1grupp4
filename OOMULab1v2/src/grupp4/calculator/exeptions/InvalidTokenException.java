@@ -8,10 +8,14 @@ package grupp4.calculator.exeptions;
 
 /**
  *
- * @author Lennart
+ * 
  */
 public class InvalidTokenException extends Exception {
     
+    /**
+     * 
+     * @param Token 
+     */
     public InvalidTokenException(String Token){
         super("InvalidTokenException: " + Token);
     }

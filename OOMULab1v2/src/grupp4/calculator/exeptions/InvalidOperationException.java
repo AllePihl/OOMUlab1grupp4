@@ -7,10 +7,13 @@ package grupp4.calculator.exeptions;
 
 /**
  *
- * @author Lennart
+ * 
  */
 public class InvalidOperationException extends Exception{
     
+    /**
+     * 
+     */
     public InvalidOperationException(){
         super("InvalidOperationException");
     }

@@ -7,10 +7,14 @@ package grupp4.calculator.exeptions;
 
 /**
  *
- * @author Lennart
+ * 
  */
 public class WrongSyntax extends Exception{
     
+    
+    /**
+     * 
+     */
     public WrongSyntax(){
         super("”Syntax: java Calculator [källfil destinationsfil]”");
     }

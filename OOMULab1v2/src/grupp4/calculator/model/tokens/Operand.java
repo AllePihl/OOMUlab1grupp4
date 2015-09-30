@@ -6,31 +6,56 @@
 package grupp4.calculator.model.tokens;
 
 import grupp4.calculator.model.Istack;
+
+
 /**
- *
- * @author Lennart
+ * 
+ * 
  */
 public class Operand extends Token{
+    /**
+     * the number stored in the operand
+     */
     private double tal;
     
     
-    
+    /**
+     * 
+     * @param tal 
+     */
     public Operand(String tal){
         this.tal = Double.parseDouble(tal);
     }
     
+    /**
+     * 
+     * @return the number as a string
+     */
     @Override
     public String toString(){
         return(Double.toString(tal));
     }
-    
+    /**
+     * Sets the operand
+     * @param tal 
+     */
     public void SetOperand(double tal){
         this.tal = tal;
     }
+    /**
+     * 
+     * @return the stored number
+     */
     public double  getOperand(){
         return (tal);
     }
 
+    
+    /**
+     * 
+     * @param stack
+     * @return the number stored in the operand
+     */
     @Override
     public double Calc(Istack stack) {
         return tal;

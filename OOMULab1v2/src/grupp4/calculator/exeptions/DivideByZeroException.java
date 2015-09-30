@@ -6,11 +6,15 @@
 package grupp4.calculator.exeptions;
 
 /**
- *
- * @author Lennart
+ * 
+ * This Exception is thrown if a denominator is zero in the Modulus and Kvot calc function
  */
 public class DivideByZeroException extends Exception{
     
+    /**
+     * 
+     * @param exp The exp that caused the Exception
+     */
     public DivideByZeroException(String exp){
         super("DivideByZeroException: " + exp);
     }

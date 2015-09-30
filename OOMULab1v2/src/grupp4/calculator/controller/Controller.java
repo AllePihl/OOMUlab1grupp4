@@ -6,16 +6,21 @@
 package grupp4.calculator.controller;
 
 import grupp4.calculator.exeptions.*;
-import grupp4.calculator.model.RPNCalculator;
 import grupp4.calculator.view.*;
-import java.util.*;
-import java.io.*;
+
 /**
- *
- * @author Lennart
+ * 
+ * 
  */
 public class Controller {
 
+    
+    /**
+     * 
+     * @param args command line argument vector
+     * @throws InvalidTokenException is thrown if something wrong is entered to the calculator
+     * @throws DivideByZeroException is thrown if a denominator is zero
+     */
     public void run(String[] args) throws InvalidTokenException, DivideByZeroException{
         ViewInterface view;
         

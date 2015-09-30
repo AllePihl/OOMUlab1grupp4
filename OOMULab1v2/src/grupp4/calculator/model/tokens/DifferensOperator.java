@@ -10,19 +10,28 @@ import grupp4.calculator.model.Istack;
 
 /**
  *
- * @author Lennart
+ * 
  */
 public class DifferensOperator extends Operator{
 
     public DifferensOperator() {
     }
     
+    /**
+     * 
+     * @return the opearator as a string
+     */
     @Override
      public String toString(){
         return ("-");
     }
     
-
+     /**
+      * 
+      * @param stack
+      * @return
+      * @throws DivideByZeroException 
+      */
     @Override
     public double Calc(Istack stack) throws DivideByZeroException{
         double r, Right, Left;
