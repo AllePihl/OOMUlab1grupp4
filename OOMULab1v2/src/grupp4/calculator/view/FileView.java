@@ -10,13 +10,21 @@ import grupp4.calculator.model.RPNCalculator;
 import java.io.*;
 
 /**
- *
- * @author alexander
+ *the view class for the File view
+ * uses command line arguments to read rom a file and calculate and then write to another file
+ * 
  */
 public class FileView implements ViewInterface{
 
+    /**
+     * gets input and output file from the Commandline arguments
+     * calculates the result of the target line and wites it ti output file
+     * @param args Command line arguments
+     * @throws InvalidTokenException if invalid token in file.
+     * @throws DivideByZeroException 
+     */
     @Override
-    public void RenameThisFunction(String[] args) throws InvalidTokenException, DivideByZeroException{
+    public void userView(String[] args) throws InvalidTokenException, DivideByZeroException{
         
         try {
             BufferedReader fil= new BufferedReader(new FileReader(args[0]));

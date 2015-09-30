@@ -9,19 +9,30 @@ import grupp4.calculator.exeptions.DivideByZeroException;
 import grupp4.calculator.model.Istack;
 
 /**
- *
- * @author Lennart
+ *java class representing the '*' operator.
+ * 
  */
 public class ProduktOperator extends Operator{
     
+    
     public ProduktOperator(){
     }
-
+    
+    /**
+    * Returns the operator in form of an string.
+    * @return the operator in string format.
+    */
     @Override
      public String toString(){
         return ("*");
     }
-    
+    /**
+    * Calculates target calculation.
+    * @param stack 
+    * @return Answer of calculation whit target operator
+    * @throws DivideByZeroException Only DifferensOperator and ModulusOperator Throws DivideByZeroException
+    */
+     
     @Override
     public double Calc(Istack stack) throws DivideByZeroException{
         double r, Right, Left;

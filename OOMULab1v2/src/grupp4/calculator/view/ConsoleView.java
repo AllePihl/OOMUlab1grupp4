@@ -11,13 +11,19 @@ import grupp4.calculator.model.RPNCalculator;
 import java.util.Scanner;
 
 /**
- *
- * @author alexander
+ *the view class for the consol view
+ * Lets the user input RPN arguments then calculates them and prints result
+ * 
  */
 public class ConsoleView implements ViewInterface{
-
+/**
+ * user view for using an command consol for inputing RPN expressions
+ * @param args command line argument array
+ * @throws InvalidTokenException if invalid token in array
+ * @throws DivideByZeroException 
+ */
     @Override
-    public void RenameThisFunction(String[] args)  throws InvalidTokenException, DivideByZeroException{
+    public void userView(String[] args)  throws InvalidTokenException, DivideByZeroException{
         RPNCalculator c = new RPNCalculator();
         String result;
         

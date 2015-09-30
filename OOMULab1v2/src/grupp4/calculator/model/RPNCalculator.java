@@ -20,15 +20,15 @@ public class RPNCalculator {
     }
     /**
      * Calculates target input string
-     * @param Exp 
+     * @param exp 
      * @return Calculated result as a string
      * @throws InvalidTokenException
      * @throws DivideByZeroException 
      */
-    public String calc(String Exp) throws InvalidTokenException, DivideByZeroException{
+    public String calc(String exp) throws InvalidTokenException, DivideByZeroException{
         double res;
         Istack st = new StackStack();
-        StringTokenizer strTok = new StringTokenizer(Exp);
+        StringTokenizer strTok = new StringTokenizer(exp);
         String str;
         
         
@@ -89,7 +89,7 @@ public class RPNCalculator {
     }
  
     /**
-     * 
+     * Cheeks if target string is an operand
      * @param s
      * @return True if target string equals an operand
      */
@@ -97,7 +97,7 @@ public class RPNCalculator {
         return s.matches("[-+]?\\d*\\.?\\d+");  
     }
     /**
-     *
+     *cheeks if target string is an operator
      * @param s
      * @return True if target string equals an operator
      */
