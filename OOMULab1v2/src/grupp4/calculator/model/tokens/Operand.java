@@ -9,8 +9,7 @@ import grupp4.calculator.model.Istack;
 
 
 /**
- * 
- * 
+ * java class representing the operand.
  */
 public class Operand extends Token{
     /**
@@ -20,7 +19,8 @@ public class Operand extends Token{
     
     
     /**
-     * 
+     * Operand Constructor
+     * Converts the input string to a doubble and sets the Operand
      * @param tal 
      */
     public Operand(String tal){

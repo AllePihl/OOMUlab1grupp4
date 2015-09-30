@@ -8,13 +8,13 @@ package grupp4.calculator.exeptions;
 
 /**
  *
- * 
+ *  Is thrown when an invalid token is entered to the calculator
  */
 public class InvalidTokenException extends Exception {
     
     /**
      * 
-     * @param Token 
+     * @param Token the token that caused the exception
      */
     public InvalidTokenException(String Token){
         super("InvalidTokenException: " + Token);

@@ -10,14 +10,14 @@ import grupp4.calculator.view.*;
 
 /**
  * 
- * 
+ * Checks which view is to be used to run the calculator
  */
 public class Controller {
 
     
     /**
-     * 
-     * @param args command line argument vector
+     * Checks which view is to be used to run the calculator
+     * @param args command line arguments
      * @throws InvalidTokenException is thrown if something wrong is entered to the calculator
      * @throws DivideByZeroException is thrown if a denominator is zero
      */

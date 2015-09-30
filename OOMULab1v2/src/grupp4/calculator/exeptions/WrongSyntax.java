@@ -7,7 +7,7 @@ package grupp4.calculator.exeptions;
 
 /**
  *
- * 
+ * Is thrown when 
  */
 public class WrongSyntax extends Exception{
     

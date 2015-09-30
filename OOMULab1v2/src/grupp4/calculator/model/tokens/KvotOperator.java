@@ -9,8 +9,7 @@ import grupp4.calculator.exeptions.DivideByZeroException;
 import grupp4.calculator.model.Istack;
 
 /**
- *
- * 
+ * Java class representing the '/' operator. 
  */
 public class KvotOperator extends Operator{
 
@@ -18,8 +17,8 @@ public class KvotOperator extends Operator{
     }
     
     /**
-     * 
-     * @return the operator as a string
+     * Returns the operator in form of an string.
+     * @return the operator in string format.
      */
     @Override
      public String toString(){

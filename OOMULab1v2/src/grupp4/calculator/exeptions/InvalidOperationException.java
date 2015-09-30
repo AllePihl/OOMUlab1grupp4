@@ -7,7 +7,7 @@ package grupp4.calculator.exeptions;
 
 /**
  *
- * 
+ * This Exception is thrown if a there are tokens left in the stack when the calculations are finished 
  */
 public class InvalidOperationException extends Exception{
     
