@@ -59,18 +59,18 @@ public class TestStack implements Istack {
        return (result);
     }
     /**
-     * Cheeks if stack is empty 
+     * Checks if stack is empty 
      * @return return true if stack is empty else false.
      */
 
     @Override
     public Boolean isEmpty() {
-    if(top == -1){
-        return (true);
-    }
-    else {
-        return (false);
-    }
+        if(top == -1){
+            return (true);
+        }
+        else {
+            return (false);
+        }
     }  
           
 }

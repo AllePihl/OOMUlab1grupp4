@@ -22,7 +22,7 @@ public class Controller {
      * @throws DivideByZeroException is thrown if a denominator is zero
      */
     public void run(String[] args) throws InvalidTokenException, DivideByZeroException{
-        ViewInterface view;
+        IView view;
         
         if(args.length == 0){
             view = new ConsoleView();

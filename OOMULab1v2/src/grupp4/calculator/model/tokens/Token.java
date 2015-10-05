@@ -5,7 +5,7 @@
  */
 package grupp4.calculator.model.tokens;
 
-import grupp4.calculator.exeptions.DivideByZeroException;
+import grupp4.calculator.exeptions.*;
 import grupp4.calculator.model.Istack;
 
 /**
@@ -21,6 +21,7 @@ public abstract class Token{
      * @param stack 
      * @return Answer of calculation whit target operator
      * @throws DivideByZeroException Only DifferensOperator and ModulusOperator Throws DivideByZeroException
+     * @throws InvalidOperationException 
      */
-    public abstract double Calc(Istack stack) throws DivideByZeroException;
+    public abstract double Calc(Istack stack) throws DivideByZeroException, InvalidOperationException;
 }

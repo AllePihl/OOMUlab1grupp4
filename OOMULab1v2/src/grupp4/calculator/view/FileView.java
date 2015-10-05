@@ -14,7 +14,7 @@ import java.io.*;
  * uses command line arguments to read rom a file and calculate and then write to another file
  * 
  */
-public class FileView implements ViewInterface{
+public class FileView implements IView{
 
     /**
      * gets input and output file from the Commandline arguments
@@ -34,11 +34,9 @@ public class FileView implements ViewInterface{
             
             System.out.println("Beräknar RPN uttryck från " + args[0] + "\nSkriver svaren till " + args[1]);
             while((line = fil.readLine()) != null){
-             
-            result = c.calc(line);
-            
-            writer.write(result);
-            writer.newLine();
+                result = c.calc(line);
+                writer.write(result);
+                writer.newLine();
             }
             writer.close();
             System.out.println("Beräkningen är klar");

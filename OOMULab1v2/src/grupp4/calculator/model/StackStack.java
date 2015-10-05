@@ -52,7 +52,7 @@ public class StackStack implements Istack{
     }
 
     /**
-     * Cheeks if stack is empty 
+     * Checks if stack is empty 
      * @return return true if stack is empty else false.
      */
     

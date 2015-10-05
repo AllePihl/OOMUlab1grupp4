@@ -5,7 +5,7 @@
  */
 package grupp4.calculator.model.tokens;
 
-import grupp4.calculator.exeptions.DivideByZeroException;
+import grupp4.calculator.exeptions.*;
 import grupp4.calculator.model.Istack;
 
 /**
@@ -31,15 +31,22 @@ public class ModulusOperator extends Operator{
      * @param stack
      * @return
      * @throws DivideByZeroException is thrown when the denominator is zero
+     * @throws InvalidOperationException 
      */
     @Override
-    public double Calc(Istack stack) throws DivideByZeroException{
+    public double Calc(Istack stack) throws DivideByZeroException, InvalidOperationException{
         double r, Right, Left;
         Token tok;
         
+        if(stack.isEmpty()){
+            throw new InvalidOperationException();
+        }
         tok = stack.pop();
         Right = tok.Calc(stack);
         
+        if(stack.isEmpty()){
+            throw new InvalidOperationException();
+        }
         tok = stack.pop();
         Left = tok.Calc(stack);
         

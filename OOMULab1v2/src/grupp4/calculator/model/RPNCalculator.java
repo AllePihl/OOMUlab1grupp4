@@ -89,7 +89,7 @@ public class RPNCalculator {
     }
  
     /**
-     * Cheeks if target string is an operand
+     * Checks if target string is an operand
      * @param s
      * @return True if target string equals an operand
      */
@@ -97,7 +97,7 @@ public class RPNCalculator {
         return s.matches("[-+]?\\d*\\.?\\d+");  
     }
     /**
-     *cheeks if target string is an operator
+     *checks if target string is an operator
      * @param s
      * @return True if target string equals an operator
      */

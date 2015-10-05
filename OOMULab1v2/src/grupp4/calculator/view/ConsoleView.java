@@ -15,11 +15,11 @@ import java.util.Scanner;
  * Lets the user input RPN arguments then calculates them and prints result
  * 
  */
-public class ConsoleView implements ViewInterface{
+public class ConsoleView implements IView{
 /**
  * user view for using an command consol for inputing RPN expressions
  * @param args command line argument array
- * @throws InvalidTokenException if invalid token in array
+ * @throws InvalidTokenException if invalid token is entered by the user
  * @throws DivideByZeroException 
  */
     @Override
@@ -30,7 +30,7 @@ public class ConsoleView implements ViewInterface{
         while(true){
             System.out.print("Ange RPN uttryck <retur> (tom sträng = avsluta):");
             Scanner scan = new Scanner(System.in); 
-            String str =scan.nextLine();
+            String str = scan.nextLine();
             if (str.isEmpty() == true){
                 System.out.println("Användaren avslutade applikationen\n");
                 System.exit(0);

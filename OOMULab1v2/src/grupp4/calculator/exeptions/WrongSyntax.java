@@ -7,7 +7,7 @@ package grupp4.calculator.exeptions;
 
 /**
  *
- * Is thrown when 
+ * Is thrown when the wrong amount of command line arguments is sent to the program
  */
 public class WrongSyntax extends Exception{
     

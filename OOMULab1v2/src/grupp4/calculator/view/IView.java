@@ -12,7 +12,7 @@ import grupp4.calculator.exeptions.*;
  *Interface for implementing views
  * 
  */
-public interface ViewInterface {
+public interface IView {
     /**
      * Abstract method 
      * @param args Command line arguments

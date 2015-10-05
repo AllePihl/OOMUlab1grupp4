@@ -20,7 +20,7 @@ public interface Istack {
     
     /**
      * abstract method
-     *Pops the top token of the stack and return the token
+     * Pops the top token of the stack and return the token
      * @return 
      */
     public Token pop();
@@ -31,7 +31,7 @@ public interface Istack {
      */
     public Token peek();
     /**
-     *Cheeks if stack is empty. if empty returns true else false
+     * Checks if stack is empty. if empty returns true else false
      * @return returns true if stack is empty else false.
      */
     public Boolean isEmpty();

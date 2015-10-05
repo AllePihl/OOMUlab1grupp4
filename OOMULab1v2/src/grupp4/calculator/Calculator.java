@@ -10,7 +10,7 @@ import grupp4.calculator.controller.Controller;
 import grupp4.calculator.exeptions.*;
 
 /**
- *Calculator is the main class
+ * Calculator is the main class
  * implements the main method
  */
 public class Calculator {
